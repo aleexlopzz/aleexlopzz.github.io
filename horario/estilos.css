@@ -1,0 +1,52 @@
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #71ff5f;
+            color: #333;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            border-width: 3px;  
+            border-style: solid; 
+            border-color: black; 
+        }
+        
+        th {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            border-width: 2px;  
+            border-style: solid; 
+            border-color: black;
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .recreo {
+            background-color: #ff0000;
+            font-weight: bold;
+            color:#000000
+        }
+        
+        .prog {background-color: #fd7f7f;
+        color:#000000}
+        .lmsgi {background-color: #fdf7a2;
+        color:#000000}
+        .sinf {background-color: #1d4f9b;
+        color:#000000}
+        .badat {background-color: #198a35;
+        color:#000000}
+        .endes {background-color: #e6862d;
+        color:#000000}
+        .ipe{background-color: #858585;
+        color:#000000}
+        .daspgs {background-color: #eeff02;
+        color:#000000}
+        .sasp {background-color: #a3008e;
+        color:#000000}
+        .dias { background-color: #e8f6f3; 
+        color:#000000}
