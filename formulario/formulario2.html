@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario II - Amigos de la informática</title>
+    <meta name="description" content="Formulario para el club Amigos de la informática.">
+    <meta name="keywords" content="formulario, amigos de la informática">
+    <meta name="author" content="Alejandro López">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Club Amigos de la informática</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="domicilio">Domicilio (calle, número y localidad):</label>
+            <input type="text" id="domicilio" name="domicilio">
+
+            <label for="pais">País de origen:</label>
+            <select id="pais" name="pais">
+                <option value="espana">España</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="nacimiento">Fecha de nacimiento (dd/mm/aaaa):</label>
+            <input type="text" id="nacimiento" name="nacimiento" placeholder="dd/mm/aaaa">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <fieldset>
+                <legend>Estado civil</legend>
+                <label><input type="radio" name="estado" value="soltero"> Solter@</label>
+                <label><input type="radio" name="estado" value="casado"> Casad@</label>
+                <label><input type="radio" name="estado" value="separado"> Separad@</label>
+                <label><input type="radio" name="estado" value="viudo"> Viud@</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sexo</legend>
+                <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+                <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label><input type="checkbox" name="dispositivo" value="movil"> Móvil</label>
+                <label><input type="checkbox" name="dispositivo" value="tablet"> Tablet</label>
+                <label><input type="checkbox" name="dispositivo" value="ordenador"> Ordenador</label>
+                <label><input type="checkbox" name="dispositivo" value="ebook"> Ebook</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Actividades favoritas</legend>
+                <label><input type="checkbox" name="actividad" value="deporte"> Hacer deporte</label>
+                <label><input type="checkbox" name="actividad" value="amigos"> Salir con mis amigos</label>
+                <label><input type="checkbox" name="actividad" value="senderismo"> Realizar rutas de senderismo</label>
+                <label><input type="checkbox" name="actividad" value="cine"> Ir al cine</label>
+                <label><input type="checkbox" name="actividad" value="series"> Ver series, pelis...</label>
+                <label><input type="checkbox" name="actividad" value="musica"> Escuchar música</label>
+            </fieldset>
+
+            <label for="motivo">Explique brevemente el motivo por el que desea ingresar en nuestro club:</label>
+            <textarea id="motivo" name="motivo" rows="4"></textarea>
+
+            <label for="peli">Elige o escribe tu peli favorita:</label>
+            <input type="text" id="peli" name="peli">
+
+            <div class="botones">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
+            </div>
+        </form>
+        <p></p>
+        <a href = "index.html">Volver a la página principal</a>
+    </main>
+</body>
+</html>
