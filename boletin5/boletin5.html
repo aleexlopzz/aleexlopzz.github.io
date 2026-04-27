@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Boletín 5</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PARTE 2 -->
+<h1 id="titulo">Boletín 5 de Alejandro López</h1>
+<p id="parrafo">Esto es un párrafo</p>
+
+<div>
+<table border="1">
+<tr>
+<td id="c1">Celda 1</td>
+<td id="c2">Celda 2</td>
+</tr>
+</table>
+</div>
+
+<br>
+<button onclick="cambiarTodo()">Cambiar DOM</button>
+<button onclick="añadirCelda()">Añadir celda</button>
+<button onclick="colorCeldas()">Color celdas</button>
+
+<hr>
+
+<!-- EJERCICIO 1 -->
+<h3>1. Persona</h3>
+<input id="nombre" placeholder="Nombre">
+<input id="apellidos" placeholder="Apellidos">
+<input id="edad" placeholder="Edad">
+<button onclick="persona()">Enviar</button>
+
+<!-- EJERCICIO 2 -->
+<h3>2. Divisible</h3>
+<input id="num" placeholder="Número">
+<button onclick="divisible()">Comprobar</button>
+
+<!-- EJERCICIO 3 -->
+<h3>3. Estaciones</h3>
+<input id="numEst" placeholder="1-4">
+<button onclick="estacion()">Ver</button>
+
+<!-- EJERCICIO 4 -->
+<h3>4. Mes (Switch)</h3>
+<input id="mes" placeholder="Mes">
+<button onclick="mesSwitch()">Ver estación</button>
+
+<!-- EJERCICIO 5 -->
+<h3>5. Mes (If)</h3>
+<button onclick="mesIf()">Ver estación (if)</button>
+
+<!-- EJERCICIO 6 -->
+<h3>6. IVA</h3>
+<input id="nombre2" placeholder="Nombre">
+<input id="dinero" placeholder="Dinero">
+<button onclick="iva()">Calcular</button>
+
+<!-- EJERCICIO 7 -->
+<h3>7. Provincia</h3>
+<input id="nombre3" placeholder="Nombre">
+<select id="provincia">
+<option value="Córdoba">Córdoba</option>
+<option value="Sevilla">Sevilla</option>
+<option value="Málaga">Málaga</option>
+<option value="Granada">Granada</option>
+<option value="Jaén">Jaén</option>
+<option value="Huelva">Huelva</option>
+<option value="Cádiz">Cádiz</option>
+<option value="Almería">Almería</option>
+</select>
+<input id="pueblo" placeholder="Pueblo">
+<button onclick="provincia()">Enviar</button>
+
+<!-- EJERCICIO 8 -->
+<h3>8. Conversor</h3>
+<input id="km" placeholder="Km">
+<button onclick="convertirKm()">Km → Millas</button>
+<br>
+<input id="millas" placeholder="Millas">
+<button onclick="convertirMillas()">Millas → Km</button>
+
+<!-- EJERCICIO 9 -->
+<h3>9. Contar caracteres</h3>
+<input id="texto">
+<button onclick="contar()">Contar</button>
+
+<!-- EJERCICIO 10 -->
+<h3>10. Palabras</h3>
+<input id="p1">
+<input id="p2">
+<button onclick="palabras()">Comparar</button>
+
+<!-- RESULTADO -->
+<div id="res"></div>
+
+<script src="boletin5.js"></script>
+
+</body>
+</html>
