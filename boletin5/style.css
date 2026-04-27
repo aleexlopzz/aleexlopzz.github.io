@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+table {
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+}
+
+#res {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid black;
+}
