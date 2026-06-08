@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Haz una reserva - La Cocina de la Abuela</title>
+    <meta name="description" content="Formulario para realizar una reserva en el restaurante.">
+    <meta name="keywords" content="reserva, restaurante">
+    <meta name="author" content="Alejandro López">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Volver al inicio</a>
+        <h1>Haz una reserva</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <label for="clientes">Número de clientes:</label>
+            <input type="number" id="clientes" name="clientes" min="1">
+
+            <label for="nombre">Su nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="correo">Su correo electrónico:</label>
+            <input type="email" id="correo" name="correo">
+
+            <label for="telefono">Su teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="fecha">Fecha de la reserva:</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label for="hora">Hora de la reserva:</label>
+            <input type="time" id="hora" name="hora">
+
+            <label for="mensaje">Su mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <div class="botones">
+                <input type="submit" value="Solicitar reserva">
+                <input type="reset" value="Limpiar datos">
+            </div>
+
+            <p>Si desea saber cómo protegemos sus datos, consulte nuestra <a href="#">Política de privacidad</a>.</p>
+        </form>
+    </main>
+</body>
+</html>

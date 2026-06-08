@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Boletín 1 - Modelo DOM</title>
+    <meta name="description" content="Modelo DOM y manipulación del DOM con JavaScript.">
+    <meta name="author" content="Alejandro López">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Boletín 1 - Modelo DOM</h1>
+    </header>
+
+    <main>
+        <a class="volver" href="../index.html">Volver al menú JavaScript</a>
+
+        <!-- ============ PARTE 1: representación gráfica del DOM ============ -->
+        <section class="bloque">
+            <h2>Parte 1 - Árbol del DOM</h2>
+            <p>Representación gráfica del modelo DOM del código de ejemplo.</p>
+
+            <ul class="arbol">
+                <li><span class="nodo doc">document</span>
+                    <ul>
+                        <li><span class="nodo">&lt;html&gt;</span>
+                            <ul>
+                                <li><span class="nodo">&lt;head&gt;</span>
+                                    <ul>
+                                        <li><span class="nodo">&lt;title&gt;</span>
+                                            <ul><li><span class="texto">"Título de la Página WEB"</span></li></ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="nodo">&lt;body&gt;</span>
+                                    <ul>
+                                        <li><span class="nodo">&lt;h1&gt;</span>
+                                            <ul><li><span class="texto">"Encabezado de la página web"</span></li></ul>
+                                        </li>
+                                        <li><span class="nodo">&lt;p&gt;</span>
+                                            <ul><li><span class="texto">"Esto es un párrafo"</span></li></ul>
+                                        </li>
+                                        <li><span class="nodo">&lt;div&gt;</span>
+                                            <ul>
+                                                <li><span class="nodo">&lt;table&gt;</span>
+                                                    <ul>
+                                                        <li><span class="nodo">&lt;tr&gt;</span>
+                                                            <ul>
+                                                                <li><span class="nodo">&lt;td&gt;</span>
+                                                                    <ul><li><span class="texto">"Celda 1"</span></li></ul>
+                                                                </li>
+                                                                <li><span class="nodo">&lt;td&gt;</span>
+                                                                    <ul><li><span class="texto">"Celda 2"</span></li></ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ============ PARTE 2: código de ejemplo en vivo + botones ============ -->
+        <section class="bloque">
+            <h2>Parte 2 - Manipulación del DOM</h2>
+            <p>Este es el código de ejemplo. Pulsa los botones para manipularlo.</p>
+
+            <!-- Estructura HTML del ejercicio sobre la que actúa el JavaScript -->
+            <div class="demo">
+                <h1 id="titulo">Encabezado de la página web</h1>
+                <p id="parrafo">Esto es un párrafo</p>
+                <div>
+                    <table id="tabla">
+                        <tr>
+                            <td id="celda1">Celda 1</td>
+                            <td id="celda2">Celda 2</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Botones que disparan cada acción del enunciado -->
+            <div class="botonera">
+                <button onclick="cambiarTitulo()">1 - Cambiar h1</button>
+                <button onclick="cambiarParrafo()">2 - Cambiar párrafo (strong)</button>
+                <button onclick="cambiarCeldas()">3 - Cambiar celdas</button>
+                <button onclick="anadirCelda()">4 - Añadir celda nueva</button>
+                <button onclick="cambiarColorCeldas()">5 - Color de las dos celdas</button>
+            </div>
+            <p class="ayuda">6 - Haz click sobre cualquier celda de la tabla para ponerla amarilla.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

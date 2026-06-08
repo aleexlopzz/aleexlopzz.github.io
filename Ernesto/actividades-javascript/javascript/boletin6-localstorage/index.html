@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Boletín 6 - Local Storage</title>
+    <meta name="author" content="Alejandro López">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Boletín 6 - Uso de Local Storage</h1>
+    </header>
+    <main>
+        <a class="volver" href="../index.html">Volver al menú JavaScript</a>
+        <p>Elige los colores. Se aplican al instante y se recuerdan al cerrar y volver a abrir.</p>
+
+        <div class="controles">
+            <label>Color filas impares:
+                <select id="colorImpares">
+                    <option value="#fde3a7">Melocotón</option>
+                    <option value="#a9cce3">Azul claro</option>
+                    <option value="#abebc6">Verde menta</option>
+                    <option value="#f5b7b1">Rosa</option>
+                    <option value="#d2b4de">Lila</option>
+                </select>
+            </label>
+            <label>Color filas pares:
+                <select id="colorPares">
+                    <option value="#d5dbdb">Gris</option>
+                    <option value="#f9e79f">Amarillo</option>
+                    <option value="#aed6f1">Celeste</option>
+                    <option value="#a3e4d7">Turquesa</option>
+                    <option value="#f5cba7">Naranja claro</option>
+                </select>
+            </label>
+            <button onclick="borrarColores()">Restablecer</button>
+        </div>
+
+        <table id="tablaRecetas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre Receta</th>
+                    <th>Ingredientes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Salmorejo</td><td>Tomate, aceite y pan</td></tr>
+                <tr><td>2</td><td>Gachas</td><td>Harina, agua y azúcar</td></tr>
+                <tr><td>3</td><td>Migas</td><td>Pan, ajo y aceite</td></tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

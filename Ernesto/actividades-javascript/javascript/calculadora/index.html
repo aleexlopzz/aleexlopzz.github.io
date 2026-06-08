@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora JavaScript</title>
+    <meta name="author" content="Alejandro López">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <a class="volver" href="../index.html">Volver al menú JavaScript</a>
+
+    <div class="calculadora">
+        <!-- pantalla donde se muestra el número o el resultado -->
+        <div class="pantalla" id="pantalla">0</div>
+
+        <div class="teclado">
+            <!-- primera fila -->
+            <button class="tecla borrar" id="borrar">C</button>
+            <button class="tecla naranja" id="borrarUltimo">DEL</button>
+            <button class="tecla naranja operador" data-operador="/">&divide;</button>
+
+            <!-- segunda fila -->
+            <button class="tecla numero" data-numero="7">7</button>
+            <button class="tecla numero" data-numero="8">8</button>
+            <button class="tecla numero" data-numero="9">9</button>
+            <button class="tecla naranja operador" data-operador="*">&times;</button>
+
+            <!-- tercera fila -->
+            <button class="tecla numero" data-numero="4">4</button>
+            <button class="tecla numero" data-numero="5">5</button>
+            <button class="tecla numero" data-numero="6">6</button>
+            <button class="tecla naranja operador" data-operador="-">&minus;</button>
+
+            <!-- cuarta fila -->
+            <button class="tecla numero" data-numero="1">1</button>
+            <button class="tecla numero" data-numero="2">2</button>
+            <button class="tecla numero" data-numero="3">3</button>
+            <button class="tecla naranja operador" data-operador="+">+</button>
+
+            <!-- quinta fila -->
+            <button class="tecla numero cero" data-numero="0">0</button>
+            <button class="tecla numero" data-numero=".">.</button>
+            <button class="tecla igual" id="igual">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

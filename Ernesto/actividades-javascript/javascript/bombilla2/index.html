@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bombilla 2</title>
+    <meta name="author" content="Alejandro López">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Bombilla 2</h1>
+    </header>
+    <main>
+        <a class="volver" href="../index.html">Volver al menú JavaScript</a>
+        <h2>¿Qué puedo hacer con JavaScript?</h2>
+        <p>JavaScript puede cambiar los atributos de HTML.</p>
+        <p>En este ejemplo cambiamos el atributo "src" de una imagen.</p>
+
+        <!-- por defecto la bombilla aparece apagada -->
+        <img id="bombilla" src="bombilla-apagada.svg" alt="Bombilla">
+
+        <!-- un único botón que enciende o apaga -->
+        <div>
+            <button id="boton" onclick="cambiarBombilla()">Encender</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
