@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Boletín 1 - Parte 3 - Actividades JavaScript</title>
+    <meta name="description" content="Las 15 actividades web de JavaScript del Boletín 1.">
+    <meta name="author" content="Alejandro López">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Parte 3 - Actividades JavaScript</h1>
+    </header>
+
+    <main>
+        <a class="volver" href="../index.html">Volver al menú JavaScript</a>
+
+        <!-- 1 -->
+        <section class="actividad">
+            <h2>1 - Datos de una persona</h2>
+            <label>Nombre: <input type="text" id="a1-nombre"></label>
+            <label>Apellidos: <input type="text" id="a1-apellidos"></label>
+            <label>Edad: <input type="number" id="a1-edad"></label>
+            <button onclick="actividad1()">Comprobar</button>
+            <div class="resultado" id="a1-resultado"></div>
+        </section>
+
+        <!-- 2 -->
+        <section class="actividad">
+            <h2>2 - ¿Divisible por dos?</h2>
+            <label>Número (1 a 30): <input type="number" id="a2-numero" min="1" max="30"></label>
+            <button onclick="actividad2()">Comprobar</button>
+            <div class="resultado caja-negra" id="a2-resultado"></div>
+        </section>
+
+        <!-- 3 -->
+        <section class="actividad">
+            <h2>3 - Estaciones del año (array)</h2>
+            <label>Número (1 a 4): <input type="number" id="a3-numero" min="1" max="4"></label>
+            <button onclick="actividad3()">Mostrar estación</button>
+            <div class="resultado" id="a3-resultado"></div>
+        </section>
+
+        <!-- 4 -->
+        <section class="actividad">
+            <h2>4 - Estación según el mes (switch)</h2>
+            <label>Nombre del mes: <input type="text" id="a4-mes" placeholder="enero, febrero..."></label>
+            <button onclick="actividad4()">Calcular</button>
+            <div class="resultado caja-roja" id="a4-resultado"></div>
+        </section>
+
+        <!-- 5 -->
+        <section class="actividad">
+            <h2>5 - Estación según el mes (if)</h2>
+            <label>Nombre del mes: <input type="text" id="a5-mes" placeholder="enero, febrero..."></label>
+            <button onclick="actividad5()">Calcular</button>
+            <div class="resultado caja-roja" id="a5-resultado"></div>
+        </section>
+
+        <!-- 6 -->
+        <section class="actividad">
+            <h2>6 - Cálculo del IVA</h2>
+            <label>Nombre: <input type="text" id="a6-nombre"></label>
+            <label>Cantidad (€): <input type="number" id="a6-cantidad"></label>
+            <button onclick="actividad6()">Calcular total</button>
+            <div class="resultado" id="a6-resultado"></div>
+        </section>
+
+        <!-- 7 -->
+        <section class="actividad">
+            <h2>7 - Gentilicio andaluz</h2>
+            <label>Nombre: <input type="text" id="a7-nombre"></label>
+            <label>Provincia:
+                <select id="a7-provincia">
+                    <option value="almeria">Almería</option>
+                    <option value="cadiz">Cádiz</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="granada">Granada</option>
+                    <option value="huelva">Huelva</option>
+                    <option value="jaen">Jaén</option>
+                    <option value="malaga">Málaga</option>
+                    <option value="sevilla">Sevilla</option>
+                </select>
+            </label>
+            <label>Pueblo: <input type="text" id="a7-pueblo"></label>
+            <button onclick="actividad7()">Generar frase</button>
+            <div class="resultado" id="a7-resultado"></div>
+        </section>
+
+        <!-- 8 -->
+        <section class="actividad">
+            <h2>8 - Conversor km / millas</h2>
+            <label>Cantidad: <input type="number" id="a8-valor"></label>
+            <label>Conversión:
+                <select id="a8-tipo">
+                    <option value="km-millas">Kilómetros a millas</option>
+                    <option value="millas-km">Millas a kilómetros</option>
+                </select>
+            </label>
+            <button onclick="actividad8()">Convertir</button>
+            <div class="resultado" id="a8-resultado"></div>
+        </section>
+
+        <!-- 9 -->
+        <section class="actividad">
+            <h2>9 - Contar caracteres</h2>
+            <label>Texto: <input type="text" id="a9-texto"></label>
+            <button onclick="actividad9()">Contar</button>
+            <div class="resultado" id="a9-resultado"></div>
+        </section>
+
+        <!-- 10 -->
+        <section class="actividad">
+            <h2>10 - Palabra más larga</h2>
+            <label>Palabra 1: <input type="text" id="a10-palabra1"></label>
+            <label>Palabra 2: <input type="text" id="a10-palabra2"></label>
+            <button onclick="actividad10()">Comparar (alert)</button>
+        </section>
+
+        <!-- 11 -->
+        <section class="actividad">
+            <h2>11 - Sumatorio de 0 a N</h2>
+            <label>Número N: <input type="number" id="a11-numero"></label>
+            <button onclick="actividad11()">Calcular suma</button>
+            <div class="resultado" id="a11-resultado"></div>
+        </section>
+
+        <!-- 12 -->
+        <section class="actividad">
+            <h2>12 - Tabla de recetas</h2>
+            <button onclick="actividad12()">Mostrar recetas</button>
+            <div class="resultado" id="a12-resultado"></div>
+        </section>
+
+        <!-- 13 -->
+        <section class="actividad">
+            <h2>13 - Búsqueda del tesoro</h2>
+            <p>Tablero 5x5. Adivina dónde está el tesoro (tienes 5 intentos).</p>
+            <button onclick="iniciarTesoro()">Nuevo juego</button>
+            <div id="a13-tablero" class="tablero"></div>
+            <div class="resultado" id="a13-resultado"></div>
+        </section>
+
+        <!-- 14 -->
+        <section class="actividad">
+            <h2>14 - La calculadora</h2>
+            <p>La calculadora está implementada en su propio apartado.</p>
+            <a class="enlace-boton" href="../calculadora/index.html">Abrir la calculadora</a>
+        </section>
+
+        <!-- 15 -->
+        <section class="actividad">
+            <h2>15 - Agenda (Map nombre / DNI)</h2>
+            <label>Nombre: <input type="text" id="a15-nombre"></label>
+            <label>DNI: <input type="text" id="a15-dni"></label>
+            <button onclick="agendaAnadir()">Añadir usuario</button>
+            <button onclick="agendaMostrar()">Ver todos</button>
+            <div class="resultado" id="a15-resultado"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
